@@ -1,0 +1,254 @@
+body {
+    background-color: rgb(37, 35, 35) ;
+    font-family: Arial;
+    color: white;
+     /* hide scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* firefox */
+}
+
+/* hide scrollbar for chrome */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.page-1 {
+    background-color: rgb(37, 35, 35) ;
+    /* background-color: yellow; */
+    margin-bottom: 500px;
+    height: 780px;
+    z-index: 50;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(37, 35, 35) ;
+    /* background-color: red ;  */
+    position: relative;
+    padding-top: 125px;
+    padding-right: 85px;
+    z-index: 0;
+    
+}
+
+.header-buttons {
+    
+    margin-right: 20px;
+    width: max-content;
+    height: 75px;
+    border: none;
+    background-color: rgb(37, 35, 35) ;
+    color: white;
+    font-size: 30px;
+}
+
+.header-buttons:hover {
+    cursor: pointer;
+    
+}
+
+.photo {
+    height: 720px;
+    object-fit: contain;
+    position: absolute;
+    left: 325px;
+    bottom: 1px;
+    z-index: 1;
+}
+
+.name {
+    position: absolute;
+    top:300px;
+    left: 100px;
+    width: 600px;
+    height: 400px;
+    font-size: 95px;
+    z-index: 2;
+    text-align: left;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+   
+}
+
+.title-line {
+    width: 10%;
+    border-top: 10px solid rgb(239, 173, 8);
+    border-color: rgb(239, 173, 8);
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.text {
+    position: absolute;
+    /* background-color: yellow; */
+    width: 450px;
+    height: 400px;
+    right: 200px;
+    bottom: 100px;
+}
+
+.heading {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    left: 0px;
+    color: rgb(87, 84, 84) ;
+    font-size: 20px;
+    /* background-color: green; */
+    width: 140px;
+    top:20px;
+}
+
+.intro-line {
+    flex: 1;
+    border: none;
+    border-top: 2px solid rgb(67, 64, 64) ;
+}
+
+.intro {
+    white-space: nowrap;
+    margin:0 5px;
+    font-weight: bold;
+
+
+}
+
+.title {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    font-size: 50px;
+    /* background-color: orange; */
+    font-weight: bold;
+}
+
+.description {
+    position: absolute;
+    font-size: 20px;
+    top: 190px;
+    color: rgb(87, 84, 84) ;
+
+}
+
+.story-button {
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(37, 35, 35) ;
+    bottom: 0px;
+    color: rgb(239, 173, 8) ;
+    font-weight: bold;
+    transition: font-size 0.5s, text-decoration 0.5s;
+}
+
+
+.story-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+   
+
+}
+
+.social-button-1 {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgb(37, 35, 35) ;
+    border: none;
+    bottom:400px;
+    left: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    z-index: 5;
+    transition: all 0.5s;
+    
+}
+
+.social-button-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.social-button-1:hover {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.social-button-2 {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgb(37, 35, 35) ;
+    border: none;
+    bottom:400px;
+    left: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    z-index: 5;
+    transition: all 0.5s;
+    
+}
+
+.social-button-2 img {
+    width: 100%;
+    height: auto;
+}
+
+.social-button-2:hover {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.page-2 {
+    margin-top: -500px;
+    background-color: rgb(18, 17, 17) ;
+    /* background-color: orange; */
+    height: 790px;
+}
+
+.page-3 {
+    /* margin-top: -500px; */
+    background-color: rgb(37, 35, 35) ;
+    /* background-color: white; */
+    height: 790px;
+}
+
+.page-4 {
+    /* margin-top: -500px; */
+    background-color: rgb(18, 17, 17) ;
+    /* background-color: green; */
+    height: 790px;
+}
+
+.page-5 {
+    /* margin-top: -500px; */
+    background-color: rgb(37, 35, 35) ;
+    /* background-color: blue; */
+    height: 790px;
+}
+
+.page-6 {
+    /* margin-top: -500px; */
+    background-color: rgb(18, 17, 17) ;
+    /* background-color: orange; */
+    height: 790px;
+}
