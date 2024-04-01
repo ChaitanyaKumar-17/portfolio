@@ -31,6 +31,7 @@ body {
     top: 0px;
     inset-inline-end: 0;
     inset-inline-start: 0;
+    flex-wrap: nowrap;
     
 }
 
@@ -38,7 +39,7 @@ body {
     
     margin-right: 1vw;
     border: none;
-    background-color: rgb(37, 35, 35) ;
+    background-color: transparent;
     color: white;
     font-size: 3vh;
     flex: 1;
@@ -48,10 +49,12 @@ body {
 }
 
 .header-buttons:hover {
+    transform: scale(1.2);
+    color: rgb(128, 124, 124);
     cursor: pointer;   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
     .header {
       padding-top: 5vw; 
       padding-left: 5vw; 
@@ -96,6 +99,7 @@ body {
     object-fit: contain;
     z-index: 4;
     margin-left: 20vw;
+    /* border: 5px solid red; */
 }
 
 .name {
@@ -120,12 +124,48 @@ body {
     margin-top: 0;
 }
 
-@media only screen and (max-width: 900px) {
+.social-button-1, .social-button-2 {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    bottom:400px;
+    left: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    z-index: 5;
+    transition: all 0.5s;
+    
+}
+
+.social-button-1 {
+    left: 150px
+}
+
+.social-button-2 {
+    left: 200px;
+}
+
+.social-button-1 img, .social-button-2 img {
+    width: 100%;
+    height: auto;
+}
+
+.social-button-1:hover, .social-button-2:hover {
+    /* height: 50px;
+    width: 50px; */
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1300px) {
     .photo {
-        margin-left: -13vw;
-        margin-top: 5vh;
+        margin-left: -20%;
+        margin-top: 10%;
         height: auto; 
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     .name {
@@ -138,33 +178,38 @@ body {
         margin-left: 4vh;
        
     }
+
+    .social-button-1:hover, .social-button-2:hover {
+        transform: none;
+    }
   
   }
 
 
 
-
-
-/* .text {
-    background-color: orange;
+.text {
+    /* background-color: yellow; */
+    position: relative;
     z-index: 3;
     flex: 1;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    margin-top: 30vh;
+    margin-left: 5vw;
 }
 
+
 .heading {
-    display: flex;
     position: absolute;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    left: 0px;
     color: rgb(87, 84, 84) ;
-    font-size: 20px;
-    /* background-color: green; 
-    width: 140px;
-    top:20px;
+    font-size: 1.8vw;
+    /* background-color: green;  */
+    width: 12vw;
+    top:5vh;
+    z-index: 4;
+    left: 4%;
 }
 
 .intro-line {
@@ -174,6 +219,7 @@ body {
 }
 
 .intro {
+    flex: 1;
     white-space: nowrap;
     margin:0 5px;
     font-weight: bold;
@@ -183,22 +229,46 @@ body {
 
 .title {
     position: absolute;
-    top: 70px;
-    left: 0px;
-    font-size: 50px;
-    /* background-color: orange; 
+    top: 10vh;
+    left: 4%;
+    font-size: 4vw;
+    /* background-color: orange;  */
     font-weight: bold;
+    width: 40vw;
 }
 
 .description {
     position: absolute;
-    font-size: 20px;
-    top: 190px;
+    font-size: 2.5vw;
+    top: 37%;
+    left: 4%;
     color: rgb(87, 84, 84) ;
 
 }
 
-.story-button {
+@media (width >= 1300px) and (width <= 1450px) {
+    .text {
+        margin-left: 10vw;
+    }
+  
+  }
+
+@media only screen and (width <= 790px) {
+    .description {
+        display: none;
+    }
+  
+  }
+
+@media only screen and (width <= 700px) {
+    .text {
+        display: none;
+    }
+  
+  }
+
+
+/* .story-button {
     position: absolute;
     font-size: 20px;
     border: none;
@@ -224,61 +294,9 @@ body {
     margin-right: 20px;
    
 
-}
+}*/
 
-.social-button-1 {
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    background-color: rgb(37, 35, 35) ;
-    border: none;
-    bottom:400px;
-    left: 150px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 100px;
-    z-index: 5;
-    transition: all 0.5s;
-    
-}
 
-.social-button-1 img {
-    width: 100%;
-    height: auto;
-}
-
-.social-button-1:hover {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-.social-button-2 {
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    background-color: rgb(37, 35, 35) ;
-    border: none;
-    bottom:400px;
-    left: 200px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 100px;
-    z-index: 5;
-    transition: all 0.5s;
-    
-}
-
-.social-button-2 img {
-    width: 100%;
-    height: auto;
-}
-
-.social-button-2:hover {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-} */
 
 .page-2 {
     background-color: rgb(18, 17, 17) ;
