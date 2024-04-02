@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 .page-1 {
     position: relative;
@@ -99,7 +103,6 @@ body {
     object-fit: contain;
     z-index: 4;
     margin-left: 20vw;
-    /* border: 5px solid red; */
 }
 
 .name {
@@ -122,6 +125,15 @@ body {
     margin-left: 0;
     margin-right: auto;
     margin-top: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+   
+
 }
 
 .social-button-1, .social-button-2 {
@@ -159,6 +171,25 @@ body {
     cursor: pointer;
 }
 
+.story-button {
+    position: absolute;
+    z-index: 6;
+    font-size: 4.3vh;
+    border: none;
+    background-color: transparent ;
+    bottom: 15%;
+    right: 8%;
+    color: rgb(239, 173, 8) ;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.story-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.3);
+
+}
 
 @media only screen and (max-width: 1300px) {
     .photo {
@@ -185,6 +216,29 @@ body {
   
   }
 
+
+@media only screen and (width <= 1300px) {
+
+    .social-button-1, .social-button-2 {
+        bottom: 10vh;
+    }
+
+    .story-button {
+        bottom: 20vh;
+    }
+  
+}
+
+@media only screen and (width <= 700px) {
+    .story-button {
+        left: 15vw;
+    }
+
+    .story-button:hover {
+        transform: none;
+    }
+  
+}
 
 
 .text {
@@ -268,33 +322,6 @@ body {
   }
 
 
-/* .story-button {
-    position: absolute;
-    font-size: 20px;
-    border: none;
-    background-color: rgb(37, 35, 35) ;
-    bottom: 0px;
-    color: rgb(239, 173, 8) ;
-    font-weight: bold;
-    transition: font-size 0.5s, text-decoration 0.5s;
-}
-
-
-.story-button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 25px;
-
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-   
-
-}*/
 
 
 
